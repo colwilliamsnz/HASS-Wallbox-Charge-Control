@@ -1,0 +1,25 @@
+alias: EV Charger Mode Disabled
+sequence:
+  - action: input_boolean.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.evcharger_mode_disable
+  - action: input_boolean.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.evcharger_mode_solar
+  - action: input_boolean.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.evcharger_mode_schedule
+  - action: input_boolean.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.evcharger_mode_immediate
+description: >-
+  UI 'Helper' script to toggle all other modes off when a Charge Mode is
+  selected in the charge control UI

@@ -1,0 +1,1958 @@
+[
+    {
+        "id": "a340a7f4657fd690",
+        "type": "tab",
+        "label": "Wallbox Charger Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7e8d1b590be7b375",
+        "type": "group",
+        "z": "a340a7f4657fd690",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b3d18264268ab91b",
+            "ac69d4792072111a",
+            "c7d392d02e8f5a32",
+            "bae8cec34623d053",
+            "67de58172dda6809",
+            "dca819f6b138f975",
+            "9dd967d260e0d097",
+            "8b0805732c60d65e",
+            "06c4d65da30ed1b5",
+            "a7f40be5b082e136",
+            "fb2d618d7310cb66",
+            "c8c58403f0278a53",
+            "e265408d5c8498fa",
+            "ea29050a43c3c9c1",
+            "c2233c8263eaf196",
+            "726ebcf218099d01",
+            "441a9d99a85ba132",
+            "dcb00a22389355b1"
+        ],
+        "x": 694,
+        "y": 19,
+        "w": 492,
+        "h": 602
+    },
+    {
+        "id": "9903d76088215a1c",
+        "type": "group",
+        "z": "a340a7f4657fd690",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "15f043b27131acab",
+            "f2b671f9dbab7dec",
+            "f2b245e92f157189",
+            "051a3d979f5a21a8",
+            "7e40c127b771a058",
+            "0f7fb5193389dbe7",
+            "6b9c6136c7c8b03b",
+            "34bb59fdd4a58319",
+            "fe153a6d75fe362a",
+            "674241c3bc9a7f30",
+            "7384a253a2fb6cf9",
+            "7ac7ebe82d7435d2"
+        ],
+        "x": 1134,
+        "y": 699,
+        "w": 1072,
+        "h": 342
+    },
+    {
+        "id": "9ff679aa469e2b69",
+        "type": "group",
+        "z": "a340a7f4657fd690",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b55d978562316c04",
+            "3646fe7583a70f54",
+            "5d496880832ec643",
+            "53d0fdb000671c72",
+            "2c9984b448093243",
+            "933dad1261dbad45",
+            "21541756b1798973",
+            "1e788607de673a93",
+            "02eae1780f71137e",
+            "09222f20289614f1",
+            "2e9c99b86f2a74bc",
+            "c9a1d0efec51eb81",
+            "14d675bea2d78297",
+            "f28c57195e7a8891",
+            "46dfc68ac5c267ad",
+            "5eb97a3abbb331d4",
+            "e0ac904903b77812",
+            "04612266795a2392",
+            "228bfd3d364cb7f3",
+            "e34a9b7d43fe6d49"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 632,
+        "h": 642
+    },
+    {
+        "id": "3bd469c4123e3256",
+        "type": "group",
+        "z": "a340a7f4657fd690",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "0909c2c4c146e51e",
+            "534b177cd0c4cc56",
+            "93b8a50c32340cc7",
+            "2bde0b680a2ed91e",
+            "2d2c0071086df582",
+            "56f9b1ec58f09be5",
+            "89e94dddb7da55f7",
+            "55bf01281b8ac5ef",
+            "788d1de136aa60b5",
+            "e58611874cf5c36c",
+            "9415bcb7f3351db2",
+            "5de8b5f533d06be5",
+            "8dd1a9f8c2b30316",
+            "67e5fe604f12f31c",
+            "6f3642cc23ec9805",
+            "726e246afffe5362",
+            "e0de2701b43338dd"
+        ],
+        "x": 34,
+        "y": 699,
+        "w": 1072,
+        "h": 422
+    },
+    {
+        "id": "0909c2c4c146e51e",
+        "type": "inject",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Repeat every 10s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 780,
+        "wires": [
+            [
+                "56f9b1ec58f09be5",
+                "534b177cd0c4cc56",
+                "726e246afffe5362"
+            ]
+        ]
+    },
+    {
+        "id": "b55d978562316c04",
+        "type": "inject",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Run once",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "933dad1261dbad45"
+            ]
+        ]
+    },
+    {
+        "id": "534b177cd0c4cc56",
+        "type": "time-range-switch",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Schedule",
+        "lat": "",
+        "lon": "",
+        "startTime": "23:00",
+        "endTime": "07:00",
+        "startOffset": 0,
+        "endOffset": 0,
+        "x": 220,
+        "y": 940,
+        "wires": [
+            [
+                "788d1de136aa60b5"
+            ],
+            [
+                "e58611874cf5c36c"
+            ]
+        ]
+    },
+    {
+        "id": "93b8a50c32340cc7",
+        "type": "api-call-service",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Set Wallbox to Resume",
+        "server": "eb2169bf09ec2bcf",
+        "version": 7,
+        "debugenabled": false,
+        "action": "switch.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "switch.wallbox_pulsar_max_sn_587847_pause_resume"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "switch",
+        "service": "turn_on",
+        "x": 970,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "15f043b27131acab",
+        "type": "inject",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Repeat every 10s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1290,
+        "y": 780,
+        "wires": [
+            [
+                "f2b245e92f157189",
+                "7e40c127b771a058"
+            ]
+        ]
+    },
+    {
+        "id": "b3d18264268ab91b",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Get flow: hysteresis_timer",
+        "func": "// Get value for debug \n\nmsg.payload = flow.get('hysteresis_timer');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 400,
+        "wires": [
+            [
+                "ac69d4792072111a"
+            ]
+        ]
+    },
+    {
+        "id": "ac69d4792072111a",
+        "type": "debug",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c7d392d02e8f5a32",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Get flow: hysteresis",
+        "func": "// Get value for debug \n\nmsg.payload = flow.get('hysteresis');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 160,
+        "wires": [
+            [
+                "bae8cec34623d053"
+            ]
+        ]
+    },
+    {
+        "id": "bae8cec34623d053",
+        "type": "debug",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "67de58172dda6809",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Get flow: charge_amps_min",
+        "func": "// Get value for debug \n\nmsg.payload = flow.get('charge_amps_min');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 220,
+        "wires": [
+            [
+                "dca819f6b138f975"
+            ]
+        ]
+    },
+    {
+        "id": "dca819f6b138f975",
+        "type": "debug",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9dd967d260e0d097",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Get flow: charge_amps_max",
+        "func": "// Get value for debug \n\nmsg.payload = flow.get('charge_amps_max');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 280,
+        "wires": [
+            [
+                "8b0805732c60d65e"
+            ]
+        ]
+    },
+    {
+        "id": "8b0805732c60d65e",
+        "type": "debug",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "06c4d65da30ed1b5",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Get flow: house_headroom",
+        "func": "// Get value for debug \n\nmsg.payload = flow.get('house_headroom');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 340,
+        "wires": [
+            [
+                "a7f40be5b082e136"
+            ]
+        ]
+    },
+    {
+        "id": "a7f40be5b082e136",
+        "type": "debug",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fb2d618d7310cb66",
+        "type": "inject",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Repeat every 2s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": ".1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 850,
+        "y": 100,
+        "wires": [
+            [
+                "c7d392d02e8f5a32",
+                "67de58172dda6809",
+                "9dd967d260e0d097",
+                "06c4d65da30ed1b5",
+                "b3d18264268ab91b",
+                "c8c58403f0278a53",
+                "ea29050a43c3c9c1",
+                "441a9d99a85ba132"
+            ]
+        ]
+    },
+    {
+        "id": "c8c58403f0278a53",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Get flow: solar_charge",
+        "func": "// Get value for debug \n\nmsg.payload = flow.get('solar_charge');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 460,
+        "wires": [
+            [
+                "e265408d5c8498fa"
+            ]
+        ]
+    },
+    {
+        "id": "e265408d5c8498fa",
+        "type": "debug",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ea29050a43c3c9c1",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Get flow: charger_power",
+        "func": "// Get value for debug \n\nmsg.payload = flow.get('charger_power');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 520,
+        "wires": [
+            [
+                "c2233c8263eaf196"
+            ]
+        ]
+    },
+    {
+        "id": "c2233c8263eaf196",
+        "type": "debug",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3646fe7583a70f54",
+        "type": "server-state-changed",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Charge Control - Disable",
+        "server": "eb2169bf09ec2bcf",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "input_boolean.evcharger_mode_disable"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "habool",
+        "ifState": "true",
+        "ifStateType": "bool",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": false,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "09222f20289614f1"
+            ],
+            [
+                "09222f20289614f1"
+            ]
+        ]
+    },
+    {
+        "id": "5d496880832ec643",
+        "type": "server-state-changed",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Charge Control - Track Solar",
+        "server": "eb2169bf09ec2bcf",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "input_boolean.evcharger_mode_solar"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "habool",
+        "ifState": "true",
+        "ifStateType": "bool",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": false,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "21541756b1798973"
+            ],
+            [
+                "21541756b1798973"
+            ]
+        ]
+    },
+    {
+        "id": "53d0fdb000671c72",
+        "type": "server-state-changed",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Charge Control - Schedule",
+        "server": "eb2169bf09ec2bcf",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "input_boolean.evcharger_mode_schedule"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "habool",
+        "ifState": "true",
+        "ifStateType": "bool",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": false,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "1e788607de673a93"
+            ],
+            [
+                "1e788607de673a93"
+            ]
+        ]
+    },
+    {
+        "id": "2c9984b448093243",
+        "type": "server-state-changed",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Charge Control - Immediate",
+        "server": "eb2169bf09ec2bcf",
+        "version": 6,
+        "outputs": 2,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "input_boolean.evcharger_mode_immediate"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "habool",
+        "ifState": "true",
+        "ifStateType": "bool",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": false,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 200,
+        "y": 360,
+        "wires": [
+            [
+                "02eae1780f71137e"
+            ],
+            [
+                "02eae1780f71137e"
+            ]
+        ]
+    },
+    {
+        "id": "2bde0b680a2ed91e",
+        "type": "throttle",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "",
+        "throttleType": "time",
+        "timeLimit": "60",
+        "timeLimitType": "seconds",
+        "countLimit": 0,
+        "blockSize": 0,
+        "locked": false,
+        "x": 760,
+        "y": 940,
+        "wires": [
+            [
+                "93b8a50c32340cc7"
+            ]
+        ]
+    },
+    {
+        "id": "726ebcf218099d01",
+        "type": "comment",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debugging",
+        "info": "",
+        "x": 780,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "933dad1261dbad45",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow configuration variables",
+        "func": "// Set initial config and dynamic values in the flow context.\n// Note: This must be run on Node-RED start to create flow variables after a restart\n\n// *** Master Configuration Data:\n\n// Timer start value for Solar excess \"cool off\" in seconds\nflow.set('hysteresis', 180);\n\n// Maximum amps to charge at. Set to whatever suits your inverter or electrical charge point constraints\nflow.set('charge_amps_max', 14);\n\n// Minimum amps to charge at. Typically this should be 6A. Consult your vehicle documentation.\nflow.set('charge_amps_min', 6);\n\n// Amps to use when running in Scheduled or Immediate charge modes\nflow.set('charge_amps_default', 14);\n\n// Watts to hold in reserve for house load.\nflow.set('house_headroom', 250);\n\n\n// *** Dynamic Data:\n\n// Initial value of solar excess cooldown timer for when solar drops below minimum charge current\n// Note: We only initialise if it doesn't exist so not to interfere with any in use timer!\nif (flow.get('hysteresis_timer') == undefined) {\n        flow.set('hysteresis_timer', 0);\n    };\n\n// Flag to indicate if charging is disabled. \n// Note: We only initialise if it doesn't exist so not to interrupt any charging!\nif (flow.get('mode_disabled') == undefined) {\n        flow.set('mode_disabled', false);\n    };\n\n\n// Flag to indicate if solar tracking is enabled. \n// Note: We only initialise if it doesn't exist so not to interrupt any charging!\nif (flow.get('mode_solar') == undefined) {\n        flow.set('mode_solar', false);\n    };\n\n// Flag to indicate if schedule is enabled. \n// Note: We only initialise if it doesn't exist so not to interrupt any charging!\nif (flow.get('mode_schedule') == undefined) {\n    flow.set('mode_schedule', false);\n};\n\n// Flag to indicate if schedule is enabled. \n// Note: We only initialise if it doesn't exist so not to interrupt any charging!\nif (flow.get('mode_immediate') == undefined) {\n    flow.set('mode_immediate', false);\n};\n\n// Flag to indicate if solar charging should take place. \n// Note: We only initialise if it doesn't exist so not to interrupt any charging!\nif (flow.get('solar_charge') == undefined) {\n        flow.set('solar_charge', false);\n    };\n\nreturn true;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2b671f9dbab7dec",
+        "type": "api-call-service",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Set Wallbox Charge Current",
+        "server": "eb2169bf09ec2bcf",
+        "version": 7,
+        "debugenabled": true,
+        "action": "number.set_value",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "number.wallbox_pulsar_max_sn_587847_maximum_charging_current"
+        ],
+        "labelId": [],
+        "data": "{\"value\":\"{{payload}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "number",
+        "service": "set_value",
+        "x": 2060,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2b245e92f157189",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Calc Charge Current from Solar Excess",
+        "func": "// Get global \"flow\" config values\nvar power_headroom = flow.get('house_headroom');\nvar hysteresis = flow.get('hysteresis');\nvar current_min = flow.get('charge_amps_min');\nvar current_max = flow.get('charge_amps_max');\n\n// Get global \"flow\" dynamic values\nvar power_solar = flow.get('solar_excess');\nvar power_charger = flow.get('charger_power');\n\nvar charger_status = flow.get('charger_status');\nvar current_charger = flow.get('charger_output');\n\nvar timer = flow.get('hysteresis_timer');\nvar charge = flow.get('solar_charge'); // boolean - charge yes or no?\n\nvar current;\nvar current_available;\n\n// Calculate available charging current only when there is solar excess\nif (power_solar > 0) {\n    current_available = Math.round(((power_solar + power_charger) - power_headroom) / 240);\n}\nelse {\n    current_available = 0; // if there is no excess, set available current to 0\n}\n\n// Stop charging if the available current < minimum AND timer has not started (ie, first time run)\nif (current_available < current_min ) {\n    if (timer == 0) {\n        charge = false; // stop charging;\n    }\n    if (timer > 0) {\n        current = current_min;\n        timer = timer - 10;\n        charge = true; // keep charging\n    }\n}\n\nif (current_available >= current_min ) {\n    current = current_available;\n    timer = hysteresis; // reset the timer\n    charge = true; // keep charging\n}\n\nif (current_available >= current_max) {\n    current = current_max;\n    timer = hysteresis; // reset the timer\n    charge = true; // keep charging\n}\n\n// Set flow variables\nflow.set('hysteresis_timer', timer);\nflow.set('current_charger', current);\nflow.set('solar_charge', charge);\n\n// Update charger output power only if changed AND charger is actually charging\n// intended to lower API calls to MyWallbox\nmsg.enable = false;\n\nvar current_new = current;\nvar current_old = current_charger;\n\nif ((current_old != current_new)) {\n    msg.payload = current_new;\n    \n    if (charger_status == \"Charging\" && flow.get('mode_solar') == true) {\n        msg.enable = true;\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 860,
+        "wires": [
+            [
+                "051a3d979f5a21a8"
+            ]
+        ]
+    },
+    {
+        "id": "051a3d979f5a21a8",
+        "type": "switch",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Switch",
+        "property": "enable",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1710,
+        "y": 860,
+        "wires": [
+            [
+                "7384a253a2fb6cf9"
+            ]
+        ]
+    },
+    {
+        "id": "7e40c127b771a058",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Pause or Resume Solar Charging?",
+        "func": "// Set Wallbox to resume or pause as required. True will pause charging, false will resume\n\nmsg.enable = false; // catch all \"unknowns\" by doing nothing ;)\n\n// We are charging but insufficient current to proceed so terminate charge\nif (flow.get('charger_status') == \"Charging\") {\n    if ((flow.get('mode_solar') == true) && (flow.get('solar_charge') == false)) {\n    msg.payload = false; // terminate charge\n    msg.enable = true; // let the flow continue\n    }\n}\n\n// We are not charging but there is excess solar so start charge\nif (flow.get('charger_status') == \"Paused\") {\n    if ((flow.get('mode_solar') == true) && (flow.get('solar_charge') == true)) {\n    msg.payload = true; // resume charge\n    msg.enable = true;\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 940,
+        "wires": [
+            [
+                "0f7fb5193389dbe7"
+            ]
+        ]
+    },
+    {
+        "id": "0f7fb5193389dbe7",
+        "type": "switch",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1710,
+        "y": 940,
+        "wires": [
+            [
+                "fe153a6d75fe362a"
+            ],
+            [
+                "674241c3bc9a7f30"
+            ]
+        ]
+    },
+    {
+        "id": "6b9c6136c7c8b03b",
+        "type": "api-call-service",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Set Wallbox to Resume",
+        "server": "eb2169bf09ec2bcf",
+        "version": 7,
+        "debugenabled": false,
+        "action": "switch.turn_on",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "switch.wallbox_pulsar_max_sn_587847_pause_resume"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "switch",
+        "service": "turn_on",
+        "x": 2070,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34bb59fdd4a58319",
+        "type": "api-call-service",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Set Wallbox to Pause",
+        "server": "eb2169bf09ec2bcf",
+        "version": 7,
+        "debugenabled": false,
+        "action": "switch.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "switch.wallbox_pulsar_max_sn_587847_pause_resume"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "switch",
+        "service": "turn_off",
+        "x": 2080,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe153a6d75fe362a",
+        "type": "throttle",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "",
+        "throttleType": "time",
+        "timeLimit": "30",
+        "timeLimitType": "seconds",
+        "countLimit": 0,
+        "blockSize": 0,
+        "locked": false,
+        "x": 1860,
+        "y": 940,
+        "wires": [
+            [
+                "6b9c6136c7c8b03b"
+            ]
+        ]
+    },
+    {
+        "id": "674241c3bc9a7f30",
+        "type": "throttle",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "",
+        "throttleType": "time",
+        "timeLimit": "30",
+        "timeLimitType": "seconds",
+        "countLimit": 0,
+        "blockSize": 0,
+        "locked": false,
+        "x": 1860,
+        "y": 1000,
+        "wires": [
+            [
+                "34bb59fdd4a58319"
+            ]
+        ]
+    },
+    {
+        "id": "7384a253a2fb6cf9",
+        "type": "throttle",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "",
+        "throttleType": "time",
+        "timeLimit": "30",
+        "timeLimitType": "seconds",
+        "countLimit": 0,
+        "blockSize": 0,
+        "locked": false,
+        "x": 1860,
+        "y": 860,
+        "wires": [
+            [
+                "f2b671f9dbab7dec"
+            ]
+        ]
+    },
+    {
+        "id": "21541756b1798973",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow: mode_solar",
+        "func": "flow.set('mode_solar', msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "441a9d99a85ba132",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Get flow: solar_excess",
+        "func": "// Get value for debug \n\nmsg.payload = flow.get('solar_excess');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 580,
+        "wires": [
+            [
+                "dcb00a22389355b1"
+            ]
+        ]
+    },
+    {
+        "id": "dcb00a22389355b1",
+        "type": "debug",
+        "z": "a340a7f4657fd690",
+        "g": "7e8d1b590be7b375",
+        "name": "Debug",
+        "active": true,
+        "tosidebar": false,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1e788607de673a93",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow: mode_schedule",
+        "func": "flow.set('mode_schedule', msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02eae1780f71137e",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow: mode_immediate",
+        "func": "flow.set('mode_immediate', msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09222f20289614f1",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow: mode_disabled",
+        "func": "flow.set('mode_disabled', msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d2c0071086df582",
+        "type": "switch",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Switch",
+        "property": "enable",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 1080,
+        "wires": [
+            [
+                "55bf01281b8ac5ef"
+            ]
+        ]
+    },
+    {
+        "id": "56f9b1ec58f09be5",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Reset Wallbox Output Current",
+        "func": "// Set Wallbox Output Current to Default (charge_amps_default)\n\nmsg.enable = false;\n\nvar current_default = flow.get('charge_amps_default');\nvar current_setting = flow.get('charger_output');\n\n// Only apply once and if change mode = schedule OR immediate\nif (flow.get('mode_schedule') == true || flow.get('mode_immediate') == true) {\n    if ((current_setting != current_default)) {\n    msg.payload = current_default;\n    msg.enable = true;\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 1080,
+        "wires": [
+            [
+                "2d2c0071086df582"
+            ]
+        ]
+    },
+    {
+        "id": "89e94dddb7da55f7",
+        "type": "api-call-service",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Set Wallbox Charge Current",
+        "server": "eb2169bf09ec2bcf",
+        "version": 7,
+        "debugenabled": true,
+        "action": "number.set_value",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "number.wallbox_pulsar_max_sn_587847_maximum_charging_current"
+        ],
+        "labelId": [],
+        "data": "{\"value\":\"{{payload}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": true,
+        "domain": "number",
+        "service": "set_value",
+        "x": 960,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55bf01281b8ac5ef",
+        "type": "throttle",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "",
+        "throttleType": "time",
+        "timeLimit": "30",
+        "timeLimitType": "seconds",
+        "countLimit": 0,
+        "blockSize": 0,
+        "locked": false,
+        "x": 760,
+        "y": 1080,
+        "wires": [
+            [
+                "89e94dddb7da55f7"
+            ]
+        ]
+    },
+    {
+        "id": "2e9c99b86f2a74bc",
+        "type": "comment",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Configuration and State Flags",
+        "info": "",
+        "x": 180,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "14d675bea2d78297",
+        "type": "server-state-changed",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Wallbox Status",
+        "server": "eb2169bf09ec2bcf",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "sensor.wallbox_pulsar_max_sn_587847_status_description"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": true,
+        "ignoreCurrentStateUnavailable": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "f28c57195e7a8891"
+            ]
+        ]
+    },
+    {
+        "id": "f28c57195e7a8891",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow: charger_status (Str)",
+        "func": "flow.set('charger_status', msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46dfc68ac5c267ad",
+        "type": "server-state-changed",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Wallbox Output Current",
+        "server": "eb2169bf09ec2bcf",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "sensor.wallbox_pulsar_max_sn_587847_max_charging_current"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": false,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": true,
+        "ignoreCurrentStateUnavailable": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 180,
+        "y": 500,
+        "wires": [
+            [
+                "c9a1d0efec51eb81"
+            ]
+        ]
+    },
+    {
+        "id": "c9a1d0efec51eb81",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow: charger_output (A)",
+        "func": "flow.set('charger_output', msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "788d1de136aa60b5",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Enable Charging?",
+        "func": "//\n\nmsg.enable = false;\n\n// Only proceed if scheduled charging is enabled\nif (flow.get('mode_schedule') == true) {\n    if (flow.get('charger_status') == \"Paused\") {\n        msg.payload = true; // pass message on to resume charge\n        msg.enable = true;\n        }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 940,
+        "wires": [
+            [
+                "8dd1a9f8c2b30316"
+            ]
+        ]
+    },
+    {
+        "id": "e58611874cf5c36c",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Disable Charging?",
+        "func": "//\n\nmsg.enable = false;\n\nvar status = flow.get('charger_status');\n\n// Only proceed if scheduled charging is enabled\nif (flow.get('mode_schedule') == true) {\n    if (status == \"Charging\" || status == \"Waiting for car demand\") {\n        msg.payload = true; // pass message on to terminate charge\n        msg.enable = true;\n        }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1000,
+        "wires": [
+            [
+                "67e5fe604f12f31c"
+            ]
+        ]
+    },
+    {
+        "id": "9415bcb7f3351db2",
+        "type": "throttle",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "",
+        "throttleType": "time",
+        "timeLimit": "60",
+        "timeLimitType": "seconds",
+        "countLimit": 0,
+        "blockSize": 0,
+        "locked": false,
+        "x": 760,
+        "y": 1000,
+        "wires": [
+            [
+                "5de8b5f533d06be5"
+            ]
+        ]
+    },
+    {
+        "id": "5de8b5f533d06be5",
+        "type": "api-call-service",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Set Wallbox to Pause",
+        "server": "eb2169bf09ec2bcf",
+        "version": 7,
+        "debugenabled": false,
+        "action": "switch.turn_off",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "switch.wallbox_pulsar_max_sn_587847_pause_resume"
+        ],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "switch",
+        "service": "turn_off",
+        "x": 980,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8dd1a9f8c2b30316",
+        "type": "switch",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 940,
+        "wires": [
+            [
+                "2bde0b680a2ed91e"
+            ]
+        ]
+    },
+    {
+        "id": "67e5fe604f12f31c",
+        "type": "switch",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 1000,
+        "wires": [
+            [
+                "9415bcb7f3351db2"
+            ]
+        ]
+    },
+    {
+        "id": "6f3642cc23ec9805",
+        "type": "comment",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Disabled, Charge Now, Scheduled, and Current Output Reset Handlers",
+        "info": "",
+        "x": 310,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "7ac7ebe82d7435d2",
+        "type": "comment",
+        "z": "a340a7f4657fd690",
+        "g": "9903d76088215a1c",
+        "name": "Solar Tracking Handlers",
+        "info": "",
+        "x": 1260,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "726e246afffe5362",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Pause or Resume Charging?",
+        "func": "//\n\nmsg.enable = false;\n\nvar status = flow.get('charger_status');\n\n// Resume charge if mode is immediate\nif (flow.get('mode_immediate') == true) {\n    if (status == \"Paused\") {\n        msg.payload = true; // pass message on to resume charge\n        msg.enable = true;\n    }\n}\n\n// Terminate charge if mode is disabled\nif (flow.get('mode_disabled') == true) {\n    if (status == \"Charging\" || status == \"Waiting for car demand\") {\n        msg.payload = false; // pass message on to terminate charge\n        msg.enable = true;\n        }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 860,
+        "wires": [
+            [
+                "e0de2701b43338dd"
+            ]
+        ]
+    },
+    {
+        "id": "e0de2701b43338dd",
+        "type": "switch",
+        "z": "a340a7f4657fd690",
+        "g": "3bd469c4123e3256",
+        "name": "Switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 610,
+        "y": 860,
+        "wires": [
+            [
+                "2bde0b680a2ed91e"
+            ],
+            [
+                "9415bcb7f3351db2"
+            ]
+        ]
+    },
+    {
+        "id": "e0ac904903b77812",
+        "type": "server-state-changed",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Power Meter (W)",
+        "server": "eb2169bf09ec2bcf",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "sensor.smart_meter_63a_1_real_power"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": false,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": true,
+        "ignoreCurrentStateUnavailable": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "04612266795a2392"
+            ]
+        ]
+    },
+    {
+        "id": "04612266795a2392",
+        "type": "smooth",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Average",
+        "property": "payload",
+        "action": "mean",
+        "count": "4",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 320,
+        "y": 620,
+        "wires": [
+            [
+                "228bfd3d364cb7f3"
+            ]
+        ]
+    },
+    {
+        "id": "228bfd3d364cb7f3",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow: solar_excess (W)",
+        "func": "// Get Fronius Smart Meter sensor\nvar power = msg.payload;\nvar excess;\n\nif (power < 0) { // negative value? We are exporting!\n    excess = Math.abs(power); // convert to a positive\n}\nelse {\n    excess = 0;\n}\n\nflow.set('solar_excess', excess);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5eb97a3abbb331d4",
+        "type": "server-state-changed",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Wallbox Charge Power (W)",
+        "server": "eb2169bf09ec2bcf",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "sensor.wallbox_pulsar_max_sn_587847_charging_power"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": true,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": true,
+        "ignoreCurrentStateUnavailable": true,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 190,
+        "y": 560,
+        "wires": [
+            [
+                "e34a9b7d43fe6d49"
+            ]
+        ]
+    },
+    {
+        "id": "e34a9b7d43fe6d49",
+        "type": "function",
+        "z": "a340a7f4657fd690",
+        "g": "9ff679aa469e2b69",
+        "name": "Set flow: charger_power (W)",
+        "func": "flow.set('charger_power', msg.payload);\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set('avg_grid_power', 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb2169bf09ec2bcf",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 5,
+        "addon": true,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": "30",
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": ": ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "default",
+        "statusTimeFormat": "h:m",
+        "enableGlobalContextStore": false
+    }
+]
