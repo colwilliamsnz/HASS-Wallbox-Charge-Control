@@ -4,15 +4,15 @@ A super simple (KISS!) method to control a Wallbox Pulsar EV charger from Home A
 
 #### Home Assistant UI:
 
-<img src="https://github.com/colwilliamsnz/wallbox-hass-charge-control/raw/main/images/hass_ui.png" width="300">
+<img src="https://github.com/colwilliamsnz/Hass-Wallbox-Charge-Control/raw/main/images/hass_ui.png" width="300">
 
 #### Solar Tracking showing charger power output following available excess solar:
 
-<img src="https://github.com/colwilliamsnz/wallbox-hass-charge-control/raw/main/images/solar_tracking.png" width="600">
+<img src="https://github.com/colwilliamsnz/Hass-Wallbox-Charge-Control/raw/main/images/solar_tracking.png" width="600">
 
 #### Node-Red flow:
 
-<img src="https://github.com/colwilliamsnz/wallbox-hass-charge-control/raw/main/images/node-red.png" width="1000">
+<img src="https://github.com/colwilliamsnz/Hass-Wallbox-Charge-Control/raw/main/images/node-red.png" width="1000">
 
 #### Requirements:
 
